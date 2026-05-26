@@ -30,9 +30,18 @@ Use this repo when you want:
 3. Let the agent cook, but do not let it run your company.
 4. Keep the parts that are brilliant, ignore the parts that sound like a keynote.
 
-Browse the full catalog: [skills/README.md](skills/README.md)
+## Quick Pick
 
-Skill-by-skill comparison lives in the catalog: [skills/README.md](skills/README.md)
+| Skill | Use it when... |
+| --- | --- |
+| [techbro-pitch](skills/techbro-pitch/SKILL.md) | You need to stress-test one idea before pitching. |
+| [techbro-pivot](skills/techbro-pivot/SKILL.md) | You need stronger market angles or narrative reframes. |
+| [techbro-moat-audit](skills/techbro-moat-audit/SKILL.md) | You need to verify whether your advantage is actually defensible. |
+| [techbro-ship-it](skills/techbro-ship-it/SKILL.md) | You need to cut scope and ship a credible MVP fast. |
+| [techbro-kpi](skills/techbro-kpi/SKILL.md) | You need to separate decision-grade metrics from vanity metrics. |
+| [techbro-crypto](skills/techbro-crypto/SKILL.md) | You want to force a blockchain angle onto an idea, no matter what. |
+
+For the full comparison guide and detailed breakdowns, see [skills/README.md](skills/README.md).
 
 ## Notes For Users
 
