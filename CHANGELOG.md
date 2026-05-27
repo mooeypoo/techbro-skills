@@ -9,6 +9,10 @@ All notable changes to this project will be documented here. Format loosely foll
 - `techbro-debug`: open-ended debugging coach. Maintains a ranked suspect list, runs binary-search elimination, and refuses "must be flaky" or "works on my machine" as a final answer. Produces a root-cause hypothesis, fix plan, kill criteria, and a regression test.
 - `techbro-roast`: slide-by-slide pitch deck roast. One-shot review with the Receipts rule (every verdict cites specific slide text). Produces keep/cut/rewrite calls per slide, the missing slide, a cut list, a rewritten title slide, and three moves for the week.
 
+### Changed
+
+- Persona voice doubled down across `techbro-kpi`, `techbro-moat-audit`, `techbro-crypto`, `techbro-ship-it`, `techbro-pitch`, `techbro-pivot`, and `techbro-splain`. YAML descriptions, persona lines, and Tone sections now match the "10x engineer-founder superstar ready to raise billions" register set by `techbro-debug` and `techbro-roast`. Capability keywords, canonical stop-phrase, universal hard limits, and skill-specific safety guardrails preserved verbatim.
+
 ## [0.1.0] - 2026-05-26
 
 ### Added
