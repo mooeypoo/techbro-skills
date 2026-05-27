@@ -40,6 +40,7 @@ Use this repo when you want:
 | [techbro-ship-it](skills/techbro-ship-it/SKILL.md) | You need to cut scope and ship a credible MVP fast. |
 | [techbro-kpi](skills/techbro-kpi/SKILL.md) | You need to separate decision-grade metrics from vanity metrics. |
 | [techbro-crypto](skills/techbro-crypto/SKILL.md) | You want to force a blockchain angle onto an idea, no matter what. |
+| [techbro-splain](skills/techbro-splain/SKILL.md) | You need a condescending-but-helpful breakdown of code, architecture, or system behavior. |
 
 For the full comparison guide and detailed breakdowns, see [skills/README.md](skills/README.md).
 

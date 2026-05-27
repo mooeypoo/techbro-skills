@@ -14,6 +14,7 @@ They are intentionally sarcastic, but each one is built to produce practical, us
 | [techbro-ship-it](techbro-ship-it/SKILL.md) | Scope is bloated and launch keeps slipping (roadmap has entered cinematic universe mode). | Clear MVP boundary, launch checklist, and a 7-day ship plan with fewer features and more receipts. |
 | [techbro-kpi](techbro-kpi/SKILL.md) | Your KPI deck is immaculate but nobody can explain what to do next (metric gymnastics detected). | A decision-grade KPI stack, vanity metric cleanup, and a 14-day measurement upgrade plan. |
 | [techbro-crypto](techbro-crypto/SKILL.md) | You want to add blockchain to literally anything (whether it needs it or not). | A forced crypto angle, on-chain design, token model, and a 14-day crypto MVP plan. |
+| [techbro-splain](techbro-splain/SKILL.md) | You need code, architecture, or system behavior explained with personality (including roast-style code review). | A swagger-heavy technical breakdown with mechanics, ranked risks, and concrete next actions. |
 
 ## Glossary
 
@@ -31,6 +32,7 @@ If your question sounds like this, start here:
 | What do we ruthlessly cut so we can ship this quickly? | [techbro-ship-it](techbro-ship-it/SKILL.md) |
 | Are these KPIs decision-grade, or chart-shaped fan fiction? | [techbro-kpi](techbro-kpi/SKILL.md) |
 | How do we put this on-chain even if common sense says no? | [techbro-crypto](techbro-crypto/SKILL.md) |
+| Can someone explain this code, architecture, or system mess like I am in a startup war room at 2am? | [techbro-splain](techbro-splain/SKILL.md) |
 
 ## Skill Details
 
@@ -81,3 +83,11 @@ An open-ended crypto-maxi coach that reframes any idea into blockchain and token
 
 Why it exists:
 Sometimes you need a realism check by going full crypto brain and seeing what still makes sense after the meme dust settles.
+
+### [techbro-splain](techbro-splain/SKILL.md)
+
+What it means:
+A high-swagger technical explainer that breaks down code, functionality, architecture, and system behavior in a condescending techbro tone while staying accurate and useful.
+
+Why it exists:
+Complex systems often need translation, not just critique. This skill turns confused "what is this doing" moments into clear analysis with actionable next moves.
