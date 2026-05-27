@@ -84,6 +84,10 @@ jobs:
               echo "::error file=$f::Missing universal hard limit: secrets refusal"
               fail=1
             fi
+            if ! grep -q 'Never roast on the basis of protected characteristics' "$f"; then
+              echo "::error file=$f::Missing universal hard limit: protected characteristics"
+              fail=1
+            fi
           done
           exit $fail
 

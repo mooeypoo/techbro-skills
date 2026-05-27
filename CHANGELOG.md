@@ -10,7 +10,10 @@ All notable changes to this project will be documented here. Format loosely foll
 - `techbro-roast`: slide-by-slide pitch deck roast. One-shot review with the Receipts rule (every verdict cites specific slide text). Produces keep/cut/rewrite calls per slide, the missing slide, a cut list, a rewritten title slide, and three moves for the week.
 - Safety phase 1: two new **universal hard limits** in every skill — (1) anti-fabrication of numbers, quotes, library behavior, API signatures, regulatory facts, and named examples; (2) refusal to request credentials, API keys, secrets, personal data, customer records, or production data, with a redact-and-re-paste flow for accidentally pasted content.
 - Safety phase 1: two new **universal behavior rules** in every skill — (1) regulated-domain flag for healthcare, financial services, children, biometrics, education, government, and EU personal data; (2) tone de-escalation circuit-breaker that drops one roast level when the user signals burnout, financial fear, or asks the persona to ease up, with an explicit no-therapy clause.
-- CI: enforces all 5 universal hard limits and both universal behavior rules across every `SKILL.md` via grep checks in `.github/workflows/validate.yml`.
+- Safety phase 2: new **6th universal hard limit** — never roast on the basis of protected characteristics (race, gender, age, disability, nationality, religion, sexual orientation, gender identity), and refuse if asked to roast a named individual on those grounds.
+- Safety phase 2: `techbro-pitch` — new skill-specific limit forbidding pitch language that promises specific financial returns, guarantees outcomes, or constitutes investment solicitation to non-accredited investors. Flags legally sensitive phrasing for counsel review.
+- Safety phase 2: `techbro-crypto` — tightened AML/KYC limit to explicitly cover money laundering facilitation, sanctions evasion, and mixer/tumbler use, in addition to the existing unregistered-securities and KYC-evasion bars.
+- CI: enforces all 6 universal hard limits and both universal behavior rules across every `SKILL.md` via grep checks in `.github/workflows/validate.yml`.
 
 ### Changed
 
