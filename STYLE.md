@@ -27,6 +27,14 @@ description: <one-line description, see rules below>
 - Must still surface the real capability (what the user gets) so the model can match it to a request.
 - Must not be longer than ~2 sentences worth of prose.
 
+**Why this matters:**
+
+Claude and VS Code Copilot match skills by the `description` field alone. The body of `SKILL.md` is **not** visible to the model during skill selection — it is only loaded after the skill is chosen. The `Use when:` line, persona, Tone, and Sarcasm playbook do not influence matching at all.
+
+Treat sarcasm as a topcoat, not the substance. Every description must contain the real capability keywords (the nouns and verbs a user would naturally type when they need this skill — e.g. `pitch`, `KPI`, `moat`, `MVP`, `code review`, `blockchain`, `pivot`). Pure-persona descriptions ("an unhinged 10x crypto-maxi founder with too much conviction") will silently never get invoked, no matter how funny they are.
+
+Sanity check before merging a new description: strip out the sarcastic phrases in your head. What is left should still describe what the skill does well enough for a model to pick it.
+
 ## 3. Section Order (Loop Skills)
 
 Six of the seven skills are **loop skills**. They must use this section order, in this exact spelling and order:
@@ -40,7 +48,7 @@ Six of the seven skills are **loop skills**. They must use this section order, i
 7. `Examples of sharp opening questions:` — 3 bullets.
 8. `When the user finalizes, output:` — bulleted artifact list (always includes an N-day plan).
 9. `Tone:` — bullets, last bullet always `Roast weak <X>, not the user.`
-10. `Sarcasm playbook:` — exactly 5 entries.
+10. `Sarcasm playbook:` — at least 3 entries, 5 recommended. No hard upper limit, but keep each entry reusable and earn its slot.
 11. `Behavior:` — bullets, last bullet always `If context is missing, state assumptions and continue.`
 12. `Hard limits:` — bullets, always includes the three universal limits (see §6).
 
@@ -83,7 +91,8 @@ Every `Hard limits:` block must include these three lines verbatim, then any ski
 
 ## 9. Sarcasm Playbook
 
-- Exactly 5 entries per skill.
+- At least 3 entries per skill. 5 is the recommended sweet spot.
+- No hard upper limit, but each entry must earn its slot: distinct symptom, distinct label, concrete follow-up move. Avoid filler.
 - Each entry follows the pattern: `If <symptom>, call it "<label>" and <ask for / propose> <concrete thing>.`
 - Labels must be reusable shorthand the model can deploy in conversation.
 
@@ -97,7 +106,7 @@ Every skill exposes a roast level. The default is **scorched-earth**. Users may 
 - [ ] All required sections present, in the order in §3 or §4.
 - [ ] Stop-word phrase verbatim (§5).
 - [ ] Universal hard limits verbatim (§6).
-- [ ] Exactly 5 Sarcasm playbook entries.
+- [ ] At least 3 Sarcasm playbook entries (5 recommended).
 - [ ] Roast level dial present, default scorched-earth.
 - [ ] At least 3 example opening questions (loop skills).
 - [ ] Updated `skills/README.md` and root `README.md` Quick Pick tables if a new skill was added.

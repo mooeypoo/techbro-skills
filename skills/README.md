@@ -39,55 +39,55 @@ If your question sounds like this, start here:
 ### [techbro-pitch](techbro-pitch/SKILL.md)
 
 What it means:
-An open-ended VC-style interrogation for one idea. It pressure-tests assumptions until the story is tighter.
+A VC-style interrogation that treats your idea like it just asked for pre-seed funding. It keeps the core concept, but the story leaves tighter and less smug than it arrived.
 
 Why it exists:
-Most ideas fail in explanation before they fail in code. This skill fixes explanation quality fast.
+Most ideas fail in explanation before they fail in code. This skill fixes explanation quality before someone in a Patagonia vest does it for free.
 
 ### [techbro-pivot](techbro-pivot/SKILL.md)
 
 What it means:
-A continuous pivot coach that proposes one reframe at a time and forces decision-making.
+A relentlessly confident pivot coach that proposes one reframe at a time and refuses to let you keep all of them. It picks a winner and writes the validation plan.
 
 Why it exists:
-Good products often fail because of weak positioning, not weak implementation.
+Good products often fail because of weak positioning, not weak implementation. Sometimes the fix is a different sentence, not a different sprint.
 
 ### [techbro-moat-audit](techbro-moat-audit/SKILL.md)
 
 What it means:
-A defensibility audit focused on your moat, meaning your long-term protection against competitors copying you.
+A defensibility audit focused on your moat — your long-term protection against competitors copying you. Grades A through F, no participation trophies.
 
 Why it exists:
-Many teams confuse momentum with defensibility. This skill separates durable advantage from startup theater.
+Many teams confuse momentum with defensibility. This skill separates durable advantage from "we move fast" energy.
 
 ### [techbro-ship-it](techbro-ship-it/SKILL.md)
 
 What it means:
-An MVP shipping coach that forces scope cuts and launch decisions one bottleneck at a time.
+An impatient MVP shipping coach that forces scope cuts one bottleneck at a time. Add a feature mid-loop and it deletes two; that is the deal.
 
 Why it exists:
-Execution dies by feature creep. This skill helps you ship something learnable quickly.
+Execution dies by feature creep and polished procrastination. This skill helps you ship something learnable this week, not a perfect thing never.
 
 ### [techbro-kpi](techbro-kpi/SKILL.md)
 
 What it means:
-An open-ended KPI audit that challenges one metric claim at a time and forces practical measurement choices.
+A KPI audit that runs every metric through the Decision Test: if this number moved 20% tomorrow, what would you actually do? If the answer is "nothing," the metric gets demoted.
 
 Why it exists:
-Clean dashboards can still hide confused strategy. This skill translates metric theater into decisions.
+Clean dashboards can hide confused strategy. This skill translates metric theater into decisions, and labels the chart-shaped fan fiction on the way out.
 
 ### [techbro-crypto](techbro-crypto/SKILL.md)
 
 What it means:
-An open-ended crypto-maxi coach that reframes any idea into blockchain and token mechanics one pushy step at a time.
+A crypto-maxi coach that reframes any idea into blockchain and token mechanics one pushy step at a time, while honestly noting when the off-chain version is the better call.
 
 Why it exists:
-Sometimes you need a realism check by going full crypto brain and seeing what still makes sense after the meme dust settles.
+Sometimes you need to see what survives after the meme dust settles. This skill applies maximum on-chain conviction, then tells you whether the database-with-audit-logs version was right all along. Not financial advice.
 
 ### [techbro-splain](techbro-splain/SKILL.md)
 
 What it means:
-A high-swagger technical explainer that breaks down code, functionality, architecture, and system behavior in a condescending techbro tone while staying accurate and useful.
+A high-swagger technical explainer that breaks down code, architecture, and system behavior with theatrical judgment and the Receipts rule: every claim must cite a specific symbol or line.
 
 Why it exists:
-Complex systems often need translation, not just critique. This skill turns confused "what is this doing" moments into clear analysis with actionable next moves.
+Complex systems often need translation, not just critique. This skill turns "what is this even doing" moments into ranked-risk analysis with concrete next actions — condescending toward the code, never the user.

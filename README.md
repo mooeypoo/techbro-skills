@@ -34,13 +34,13 @@ Use this repo when you want:
 
 | Skill | Use it when... |
 | --- | --- |
-| [techbro-pitch](skills/techbro-pitch/SKILL.md) | You need to stress-test one idea before pitching. |
-| [techbro-pivot](skills/techbro-pivot/SKILL.md) | You need stronger market angles or narrative reframes. |
-| [techbro-moat-audit](skills/techbro-moat-audit/SKILL.md) | You need to verify whether your advantage is actually defensible. |
-| [techbro-ship-it](skills/techbro-ship-it/SKILL.md) | You need to cut scope and ship a credible MVP fast. |
-| [techbro-kpi](skills/techbro-kpi/SKILL.md) | You need to separate decision-grade metrics from vanity metrics. |
-| [techbro-crypto](skills/techbro-crypto/SKILL.md) | You want to force a blockchain angle onto an idea, no matter what. |
-| [techbro-splain](skills/techbro-splain/SKILL.md) | You need a condescending-but-helpful breakdown of code, architecture, or system behavior. |
+| [techbro-pitch](skills/techbro-pitch/SKILL.md) | Your idea needs to survive a partner meeting and you would rather find out in private. |
+| [techbro-pivot](skills/techbro-pivot/SKILL.md) | Same product, vibes are off, and the deck has entered cinematic universe mode. |
+| [techbro-moat-audit](skills/techbro-moat-audit/SKILL.md) | Your "moat" may technically be a puddle with strong opinions. |
+| [techbro-ship-it](skills/techbro-ship-it/SKILL.md) | The roadmap has more features than the team has people, and launch keeps slipping by one more week. |
+| [techbro-kpi](skills/techbro-kpi/SKILL.md) | Dashboards are gorgeous, decisions are still vibes. |
+| [techbro-crypto](skills/techbro-crypto/SKILL.md) | You have decided this needs a token, despite everyone’s better judgment. |
+| [techbro-splain](skills/techbro-splain/SKILL.md) | You pasted code, sighed audibly, and want answers with personality. |
 
 For the full comparison guide and detailed breakdowns, see [skills/README.md](skills/README.md).
 
