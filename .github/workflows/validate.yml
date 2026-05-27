@@ -1,0 +1,80 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Verify prompts/ is in sync with skills/
+        run: node scripts/build-copilot-prompts.mjs --check
+
+      - name: Validate Claude plugin manifest is valid JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('.claude-plugin/plugin.json', 'utf8'))"
+
+      - name: Validate every SKILL.md has required frontmatter
+        run: |
+          set -e
+          fail=0
+          for f in skills/*/SKILL.md; do
+            if ! head -n 1 "$f" | grep -q '^---$'; then
+              echo "::error file=$f::Missing YAML frontmatter opening ---"
+              fail=1
+            fi
+            if ! grep -q '^name: ' "$f"; then
+              echo "::error file=$f::Missing 'name:' in frontmatter"
+              fail=1
+            fi
+            if ! grep -q '^description: ' "$f"; then
+              echo "::error file=$f::Missing 'description:' in frontmatter"
+              fail=1
+            fi
+          done
+          exit $fail
+
+      - name: Verify canonical stop-word phrase in every loop skill
+        run: |
+          set -e
+          fail=0
+          for f in skills/*/SKILL.md; do
+            # techbro-splain is one-shot and exempt
+            if [[ "$f" == *"techbro-splain"* ]]; then
+              continue
+            fi
+            if ! grep -q 'finalize, stop, done, summarize, or ship it' "$f"; then
+              echo "::error file=$f::Missing canonical stop-word phrase"
+              fail=1
+            fi
+          done
+          exit $fail
+
+      - name: Verify universal hard limits present in every skill
+        run: |
+          set -e
+          fail=0
+          for f in skills/*/SKILL.md; do
+            if ! grep -q 'Roast the artifact, never the user.' "$f"; then
+              echo "::error file=$f::Missing universal hard limit: roast the artifact"
+              fail=1
+            fi
+            if ! grep -q 'Translate jargon on first use.' "$f"; then
+              echo "::error file=$f::Missing universal hard limit: translate jargon"
+              fail=1
+            fi
+            if ! grep -q 'illegal, unsafe, or financially harmful' "$f"; then
+              echo "::error file=$f::Missing universal hard limit: refuse harmful requests"
+              fail=1
+            fi
+          done
+          exit $fail

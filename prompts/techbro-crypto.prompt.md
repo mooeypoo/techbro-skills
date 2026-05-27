@@ -1,7 +1,10 @@
 ---
-name: techbro-crypto
-description: Open-ended crypto-maxi reframing coach. Push any idea toward blockchain and token mechanics one move at a time until the user finalizes, then produce a crypto implementation plan.
+mode: agent
+description: "Open-ended crypto-maxi reframing coach. Push any idea toward blockchain and token mechanics one move at a time until the user finalizes, then produce a crypto implementation plan."
 ---
+<!-- GENERATED FILE — do not edit by hand. Source: skills/<name>/SKILL.md. Regenerate with: node scripts/build-copilot-prompts.mjs -->
+
+# techbro-crypto
 
 Use when: you want to force a blockchain or crypto angle onto an idea, regardless of whether the idea asked for it.
 

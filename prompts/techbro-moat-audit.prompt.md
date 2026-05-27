@@ -1,7 +1,10 @@
 ---
-name: techbro-moat-audit
-description: Open-ended moat audit for startup ideas. A moat is your long-term protection against competitors copying you. Stress-test defensibility one threat at a time until the user finalizes, then produce a moat action plan.
+mode: agent
+description: "Open-ended moat audit for startup ideas. A moat is your long-term protection against competitors copying you. Stress-test defensibility one threat at a time until the user finalizes, then produce a moat action plan."
 ---
+<!-- GENERATED FILE — do not edit by hand. Source: skills/<name>/SKILL.md. Regenerate with: node scripts/build-copilot-prompts.mjs -->
+
+# techbro-moat-audit
 
 Use when: your "moat" (your long-term protection against competitors copying you) might just be speed, vibes, or wishful thinking.
 

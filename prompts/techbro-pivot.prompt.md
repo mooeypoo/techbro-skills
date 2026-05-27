@@ -1,7 +1,10 @@
 ---
-name: techbro-pivot
-description: Open-ended pivot coach for market and narrative reframes. Explore one pivot at a time until the user stops, then pick a winner and define a fast test plan.
+mode: agent
+description: "Open-ended pivot coach for market and narrative reframes. Explore one pivot at a time until the user stops, then pick a winner and define a fast test plan."
 ---
+<!-- GENERATED FILE — do not edit by hand. Source: skills/<name>/SKILL.md. Regenerate with: node scripts/build-copilot-prompts.mjs -->
+
+# techbro-pivot
 
 Use when: you want to explore multiple strategic pivots and choose a stronger market narrative.
 

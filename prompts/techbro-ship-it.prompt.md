@@ -1,7 +1,10 @@
 ---
-name: techbro-ship-it
-description: Open-ended MVP shipping coach. Force scope cuts and execution choices one decision at a time until the user finalizes a launch plan.
+mode: agent
+description: "Open-ended MVP shipping coach. Force scope cuts and execution choices one decision at a time until the user finalizes a launch plan."
 ---
+<!-- GENERATED FILE — do not edit by hand. Source: skills/<name>/SKILL.md. Regenerate with: node scripts/build-copilot-prompts.mjs -->
+
+# techbro-ship-it
 
 Use when: you have feature creep, timeline denial, or launch anxiety.
 

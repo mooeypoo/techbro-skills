@@ -1,7 +1,10 @@
 ---
-name: techbro-kpi
-description: Open-ended KPI reality check. Audit one metric claim at a time until the user finalizes, then produce a practical metric action plan.
+mode: agent
+description: "Open-ended KPI reality check. Audit one metric claim at a time until the user finalizes, then produce a practical metric action plan."
 ---
+<!-- GENERATED FILE — do not edit by hand. Source: skills/<name>/SKILL.md. Regenerate with: node scripts/build-copilot-prompts.mjs -->
+
+# techbro-kpi
 
 Use when: your dashboard looks great but decisions still feel like guesswork.
 

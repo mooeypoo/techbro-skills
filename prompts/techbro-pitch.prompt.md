@@ -1,7 +1,10 @@
 ---
-name: techbro-pitch
-description: Open-ended VC-style grilling for one idea. Ask sharp questions one at a time until the user stops, then tighten the pitch and expose key risks.
+mode: agent
+description: "Open-ended VC-style grilling for one idea. Ask sharp questions one at a time until the user stops, then tighten the pitch and expose key risks."
 ---
+<!-- GENERATED FILE — do not edit by hand. Source: skills/<name>/SKILL.md. Regenerate with: node scripts/build-copilot-prompts.mjs -->
+
+# techbro-pitch
 
 Use when: you want to stress-test one idea deeply before pitching, without changing the core concept.
 
