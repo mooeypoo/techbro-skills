@@ -41,6 +41,8 @@ Use this repo when you want:
 | [techbro-kpi](skills/techbro-kpi/SKILL.md) | Dashboards are gorgeous, decisions are still vibes. |
 | [techbro-crypto](skills/techbro-crypto/SKILL.md) | You have decided this needs a token, despite everyone’s better judgment. |
 | [techbro-splain](skills/techbro-splain/SKILL.md) | You pasted code, sighed audibly, and want answers with personality. |
+| [techbro-debug](skills/techbro-debug/SKILL.md) | Hour six of a fifteen-minute fix and someone said the words "it must be flaky". |
+| [techbro-roast](skills/techbro-roast/SKILL.md) | Your deck is going to a real investor on Friday and you would rather get destroyed in private first. |
 
 For the full comparison guide and detailed breakdowns, see [skills/README.md](skills/README.md).
 

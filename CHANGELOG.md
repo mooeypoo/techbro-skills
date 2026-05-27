@@ -4,6 +4,11 @@ All notable changes to this project will be documented here. Format loosely foll
 
 ## [Unreleased]
 
+### Added
+
+- `techbro-debug`: open-ended debugging coach. Maintains a ranked suspect list, runs binary-search elimination, and refuses "must be flaky" or "works on my machine" as a final answer. Produces a root-cause hypothesis, fix plan, kill criteria, and a regression test.
+- `techbro-roast`: slide-by-slide pitch deck roast. One-shot review with the Receipts rule (every verdict cites specific slide text). Produces keep/cut/rewrite calls per slide, the missing slide, a cut list, a rewritten title slide, and three moves for the week.
+
 ## [0.1.0] - 2026-05-26
 
 ### Added

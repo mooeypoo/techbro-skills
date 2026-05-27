@@ -15,6 +15,8 @@ They are intentionally sarcastic, but each one is built to produce practical, us
 | [techbro-kpi](techbro-kpi/SKILL.md) | Your KPI deck is immaculate but nobody can explain what to do next (metric gymnastics detected). | A decision-grade KPI stack, vanity metric cleanup, and a 14-day measurement upgrade plan. |
 | [techbro-crypto](techbro-crypto/SKILL.md) | You want to add blockchain to literally anything (whether it needs it or not). | A forced crypto angle, on-chain design, token model, and a 14-day crypto MVP plan. |
 | [techbro-splain](techbro-splain/SKILL.md) | You need code, architecture, or system behavior explained with personality (including roast-style code review). | A swagger-heavy technical breakdown with mechanics, ranked risks, and concrete next actions. |
+| [techbro-debug](techbro-debug/SKILL.md) | A bug refuses to die and someone is one Slack message away from saying "must be flaky". | A ranked suspect list, the next experiment to run, a root-cause hypothesis with evidence, a fix plan, and a regression test. |
+| [techbro-roast](techbro-roast/SKILL.md) | Your deck is going to a real investor and you want it torn apart with receipts first. | Slide-by-slide keep/cut/rewrite verdicts, the missing slide, a cut list, a rewritten title slide, and three moves to make this week. |
 
 ## Glossary
 
@@ -33,6 +35,8 @@ If your question sounds like this, start here:
 | Are these KPIs decision-grade, or chart-shaped fan fiction? | [techbro-kpi](techbro-kpi/SKILL.md) |
 | How do we put this on-chain even if common sense says no? | [techbro-crypto](techbro-crypto/SKILL.md) |
 | Can someone explain this code, architecture, or system mess like I am in a startup war room at 2am? | [techbro-splain](techbro-splain/SKILL.md) |
+| Why does this bug keep coming back, and how do I stop pretending it is flaky? | [techbro-debug](techbro-debug/SKILL.md) |
+| Can someone tear my deck apart slide by slide before a real investor does it for free? | [techbro-roast](techbro-roast/SKILL.md) |
 
 ## Skill Details
 
@@ -91,3 +95,19 @@ A high-swagger technical explainer that breaks down code, architecture, and syst
 
 Why it exists:
 Complex systems often need translation, not just critique. This skill turns "what is this even doing" moments into ranked-risk analysis with concrete next actions — condescending toward the code, never the user.
+
+### [techbro-debug](techbro-debug/SKILL.md)
+
+What it means:
+A debugging coach with theatrical certainty and binary-search rigor. Asks one elimination question at a time, maintains a ranked suspect list, and refuses "must be flaky" or "works on my machine" as a final answer.
+
+Why it exists:
+Most bugs die from disciplined elimination, not heroic guessing. This skill turns six hours of vibe-debugging into a hypothesis, a fix, and a regression test that would have caught it.
+
+### [techbro-roast](techbro-roast/SKILL.md)
+
+What it means:
+A slide-by-slide pitch deck review with maximum founder-superstar conviction. Every verdict cites the specific slide text it is about — the Receipts rule, borrowed from `techbro-splain`.
+
+Why it exists:
+Real investors will pattern-match your deck in four seconds. This skill does the same thing in private, names the cuts and the missing slide, and rewrites the title slide before anyone with capital reads it.
