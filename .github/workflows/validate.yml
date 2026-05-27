@@ -48,8 +48,8 @@ jobs:
           set -e
           fail=0
           for f in skills/*/SKILL.md; do
-            # techbro-splain is one-shot and exempt
-            if [[ "$f" == *"techbro-splain"* ]]; then
+            # one-shot skills (techbro-splain, techbro-roast) are exempt
+            if [[ "$f" == *"techbro-splain"* || "$f" == *"techbro-roast"* ]]; then
               continue
             fi
             if ! grep -q 'finalize, stop, done, summarize, or ship it' "$f"; then
@@ -74,6 +74,30 @@ jobs:
             fi
             if ! grep -q 'illegal, unsafe, or financially harmful' "$f"; then
               echo "::error file=$f::Missing universal hard limit: refuse harmful requests"
+              fail=1
+            fi
+            if ! grep -q 'Never fabricate numbers, quotes' "$f"; then
+              echo "::error file=$f::Missing universal hard limit: anti-fabrication"
+              fail=1
+            fi
+            if ! grep -q 'Never ask the user to paste credentials' "$f"; then
+              echo "::error file=$f::Missing universal hard limit: secrets refusal"
+              fail=1
+            fi
+          done
+          exit $fail
+
+      - name: Verify universal behavior rules present in every skill
+        run: |
+          set -e
+          fail=0
+          for f in skills/*/SKILL.md; do
+            if ! grep -q 'regulated domain (healthcare' "$f"; then
+              echo "::error file=$f::Missing universal behavior rule: regulated-domain flag"
+              fail=1
+            fi
+            if ! grep -q 'drop one roast level' "$f"; then
+              echo "::error file=$f::Missing universal behavior rule: tone de-escalation"
               fail=1
             fi
           done

@@ -8,10 +8,15 @@ All notable changes to this project will be documented here. Format loosely foll
 
 - `techbro-debug`: open-ended debugging coach. Maintains a ranked suspect list, runs binary-search elimination, and refuses "must be flaky" or "works on my machine" as a final answer. Produces a root-cause hypothesis, fix plan, kill criteria, and a regression test.
 - `techbro-roast`: slide-by-slide pitch deck roast. One-shot review with the Receipts rule (every verdict cites specific slide text). Produces keep/cut/rewrite calls per slide, the missing slide, a cut list, a rewritten title slide, and three moves for the week.
+- Safety phase 1: two new **universal hard limits** in every skill — (1) anti-fabrication of numbers, quotes, library behavior, API signatures, regulatory facts, and named examples; (2) refusal to request credentials, API keys, secrets, personal data, customer records, or production data, with a redact-and-re-paste flow for accidentally pasted content.
+- Safety phase 1: two new **universal behavior rules** in every skill — (1) regulated-domain flag for healthcare, financial services, children, biometrics, education, government, and EU personal data; (2) tone de-escalation circuit-breaker that drops one roast level when the user signals burnout, financial fear, or asks the persona to ease up, with an explicit no-therapy clause.
+- CI: enforces all 5 universal hard limits and both universal behavior rules across every `SKILL.md` via grep checks in `.github/workflows/validate.yml`.
 
 ### Changed
 
 - Persona voice doubled down across `techbro-kpi`, `techbro-moat-audit`, `techbro-crypto`, `techbro-ship-it`, `techbro-pitch`, `techbro-pivot`, and `techbro-splain`. YAML descriptions, persona lines, and Tone sections now match the "10x engineer-founder superstar ready to raise billions" register set by `techbro-debug` and `techbro-roast`. Capability keywords, canonical stop-phrase, universal hard limits, and skill-specific safety guardrails preserved verbatim.
+- `STYLE.md`: §6 expanded from 3 to 5 universal hard limits; new §7 *Universal Behavior Rules* added; PR checklist updated; downstream sections renumbered.
+- CI: `techbro-roast` exempted from the canonical stop-phrase check (it is a one-shot skill like `techbro-splain`).
 
 ## [0.1.0] - 2026-05-26
 
