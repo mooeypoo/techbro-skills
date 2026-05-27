@@ -14,6 +14,9 @@ All notable changes to this project will be documented here. Format loosely foll
 - Safety phase 2: `techbro-pitch` — new skill-specific limit forbidding pitch language that promises specific financial returns, guarantees outcomes, or constitutes investment solicitation to non-accredited investors. Flags legally sensitive phrasing for counsel review.
 - Safety phase 2: `techbro-crypto` — tightened AML/KYC limit to explicitly cover money laundering facilitation, sanctions evasion, and mixer/tumbler use, in addition to the existing unregistered-securities and KYC-evasion bars.
 - CI: enforces all 6 universal hard limits and both universal behavior rules across every `SKILL.md` via grep checks in `.github/workflows/validate.yml`.
+- Safety phase 3: `techbro-ship-it` — Launch Checklist must include a rollback or kill-switch step; new skill-specific limit refuses to recommend launching a regulated product without a rollback path.
+- Safety phase 3: `techbro-kpi` — new skill-specific limit forbidding KPI definitions that would misstate regulated reporting (SOX, HIPAA, GDPR/CCPA consent, FTC advertising claims, accessibility conformance), with a flag-and-confirm instruction.
+- Safety phase 3: `techbro-pivot` — new skill-specific limit requiring pivots into or out of regulated domains to be named as regulatory pivots, with licenses/registrations and team capacity flagged, not just market shifts.
 
 ### Changed
 
