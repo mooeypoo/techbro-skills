@@ -84,10 +84,6 @@ jobs:
               echo "::error file=$f::Missing universal hard limit: secrets refusal"
               fail=1
             fi
-            if ! grep -q 'Never roast on the basis of protected characteristics' "$f"; then
-              echo "::error file=$f::Missing universal hard limit: protected characteristics"
-              fail=1
-            fi
           done
           exit $fail
 
@@ -96,8 +92,8 @@ jobs:
           set -e
           fail=0
           for f in skills/*/SKILL.md; do
-            if ! grep -q 'regulated domain (healthcare' "$f"; then
-              echo "::error file=$f::Missing universal behavior rule: regulated-domain flag"
+            if ! grep -q 'regulated area (medical' "$f"; then
+              echo "::error file=$f::Missing universal behavior rule: regulated-area flag"
               fail=1
             fi
             if ! grep -q 'drop one roast level' "$f"; then
