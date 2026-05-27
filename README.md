@@ -70,7 +70,6 @@ prompts/                 Generated VS Code Copilot .prompt.md mirrors
 scripts/                 Build and validation tooling
 .claude-plugin/          Claude plugin manifest
 STYLE.md                 Authoring rules every SKILL.md must follow
-FUTURE_SKILLS.md         Backlog of candidate skills (not implemented)
 CHANGELOG.md             Versioned change log
 ```
 
@@ -101,8 +100,6 @@ This exits non-zero if `prompts/` is out of date relative to `skills/`. The full
 3. Run `node scripts/build-copilot-prompts.mjs`.
 4. Update the Quick Pick table above and [skills/README.md](skills/README.md) if you added a new skill.
 5. Add a `CHANGELOG.md` entry under `[Unreleased]`.
-
-See [FUTURE_SKILLS.md](FUTURE_SKILLS.md) for a backlog of candidate skills.
 
 ## Notes For Users
 
