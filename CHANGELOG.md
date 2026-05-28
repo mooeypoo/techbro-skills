@@ -2,13 +2,13 @@
 
 All notable changes to this project will be documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/), and the project aims for [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+## [0.2.0] - 2026-05-28
 
 ### Removed
 
-- Removed the Copilot prompt translation pipeline (`scripts/build-copilot-prompts.mjs`) and generated `prompts/*.prompt.md` mirrors.
-- Updated CI (`.github/workflows/validate.yml`) to stop checking prompt mirror drift.
-- Updated docs to use `skills/*/SKILL.md` directly as the single source of truth.
+- Removed the Copilot prompt translation pipeline (`scripts/build-copilot-prompts.mjs`) and generated `prompts/*.prompt.md` mirrors. VS Code Copilot can consume `skills/*/SKILL.md` directly.
+- Removed CI drift-check step that verified `prompts/` was in sync with `skills/`.
+- Updated docs to reflect `skills/*/SKILL.md` as the single source of truth for all consumers.
 
 ## [0.1.0] - 2026-05-26
 
