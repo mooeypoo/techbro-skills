@@ -48,7 +48,7 @@ For the full comparison guide and detailed breakdowns, see [skills/README.md](sk
 
 ## Install
 
-This repo ships in two formats from one source of truth. The canonical skills live under `skills/<slug>/SKILL.md`. The VS Code Copilot prompt mirrors under `prompts/<slug>.prompt.md` are generated — do not edit them by hand.
+This repo ships as canonical skill files under `skills/<slug>/SKILL.md`.
 
 ### Claude (skills or plugin)
 
@@ -57,8 +57,8 @@ This repo ships in two formats from one source of truth. The canonical skills li
 
 ### VS Code Copilot
 
-- **Quick try:** copy any file from [prompts/](prompts) into your workspace's `.github/prompts/` folder. Invoke from Copilot Chat as a slash command.
-- **As a Copilot prompt plugin:** point your Copilot plugin loader at this repo's `prompts/` directory.
+- Use the `skills/<slug>/SKILL.md` files directly.
+- If you package these for your own workflow, treat `skills/` as the source of truth.
 
 ## Development
 
@@ -66,40 +66,24 @@ This repo ships in two formats from one source of truth. The canonical skills li
 
 ```
 skills/                  Canonical SKILL.md files (source of truth)
-prompts/                 Generated VS Code Copilot .prompt.md mirrors
-scripts/                 Build and validation tooling
+scripts/                 Validation tooling
 .claude-plugin/          Claude plugin manifest
 STYLE.md                 Authoring rules every SKILL.md must follow
 CHANGELOG.md             Versioned change log
 ```
 
-### Build the Copilot prompt mirrors
-
-After editing any `skills/*/SKILL.md`, regenerate the Copilot prompt files:
-
-```sh
-node scripts/build-copilot-prompts.mjs
-```
-
-Then commit the regenerated `prompts/` along with your SKILL changes.
-
 ### Verify the repo is in sync
 
 CI runs the same check on every push and pull request:
 
-```sh
-node scripts/build-copilot-prompts.mjs --check
-```
-
-This exits non-zero if `prompts/` is out of date relative to `skills/`. The full validation workflow lives in [.github/workflows/validate.yml](.github/workflows/validate.yml) and also enforces required frontmatter, the canonical stop-word phrase, and the universal hard limits.
+The full validation workflow lives in [.github/workflows/validate.yml](.github/workflows/validate.yml) and enforces required frontmatter, the canonical stop-word phrase, and the universal hard limits.
 
 ### Adding or editing a skill
 
 1. Read [STYLE.md](STYLE.md). Every skill must conform to its template.
 2. Edit or create `skills/<slug>/SKILL.md`.
-3. Run `node scripts/build-copilot-prompts.mjs`.
-4. Update the Quick Pick table above and [skills/README.md](skills/README.md) if you added a new skill.
-5. Add a `CHANGELOG.md` entry under `[Unreleased]`.
+3. Update the Quick Pick table above and [skills/README.md](skills/README.md) if you added a new skill.
+4. Add a `CHANGELOG.md` entry under `[Unreleased]`.
 
 ## Notes For Users
 

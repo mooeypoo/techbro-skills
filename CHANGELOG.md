@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/), and the project aims for [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Removed
+
+- Removed the Copilot prompt translation pipeline (`scripts/build-copilot-prompts.mjs`) and generated `prompts/*.prompt.md` mirrors.
+- Updated CI (`.github/workflows/validate.yml`) to stop checking prompt mirror drift.
+- Updated docs to use `skills/*/SKILL.md` directly as the single source of truth.
+
 ## [0.1.0] - 2026-05-26
 
 Initial release. Nine techbro-flavored skills, a canonical style guide, a Claude plugin manifest, a VS Code Copilot prompt generator, and a CI workflow that keeps the two surfaces in lockstep.

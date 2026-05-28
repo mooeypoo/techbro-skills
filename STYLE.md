@@ -122,4 +122,3 @@ Every skill exposes a roast level. The default is **scorched-earth**. Users may 
 - [ ] Roast level dial present, default scorched-earth.
 - [ ] At least 3 example opening questions (loop skills).
 - [ ] Updated `skills/README.md` and root `README.md` Quick Pick tables if a new skill was added.
-- [ ] Ran `scripts/build-copilot-prompts.mjs` and committed regenerated `prompts/`.
